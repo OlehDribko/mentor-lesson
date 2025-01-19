@@ -5,15 +5,50 @@
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vanilla App Template</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
+    
+    
   </head>
   <body>
     <load src="./partials/header.html" icon-path="img/sprite.svg#logo" />
 
     <main>
+      <section class="recepise">
+        <div class="container">
+          <button class="recepise-get-js-btn card-content-btn" type="button">Get recepise</button>
+          <ul class="list-recept">
+            <li class="card">
+              <img class="card-img" src="" alt="" />
+              <div class="card-body">
+                <button class="card-favorit-btn" type="button">
+                  <svg class="card-favorit-icon" width="22" height="22">
+                    <use href=""></use>
+                  </svg>
+                </button>
+                <h2 class="card-title">bANANA pANCAKES</h2>
+                <p class="card-text">
+                  Banana pancakes are a fluffy and sweet breakfast dish made with
+                </p>
+                <div class="card-content">
+                  <p class="card-content-rating">
+                    <span class="card-content-value">4.5</span
+                    ><svg class="card-content-icons">
+                      <use></use>
+                    </svg>
+                  </p>
+                  <button type="button" class="card-content-btn">See recipe</button>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
       <!-- Loads the specified .html file -->
-      <load src="./partials/vite-promo.html" />
-      <load src="./partials/badges.html" />
+     
     </main>
 
     <load src="./partials/footer.html" />
